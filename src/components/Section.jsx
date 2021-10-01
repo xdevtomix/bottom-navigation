@@ -10,6 +10,7 @@ export default function Section({ id, title }) {
         const observer = new IntersectionObserver((entries) => {
             if (entries[0].intersectionRatio >= 0.8) {
                 setActiveSectionId(id);
+                location.hash = id;
             }
         }, {
             root: null,
