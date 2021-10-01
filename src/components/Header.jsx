@@ -1,3 +1,5 @@
+import HeaderItem from "./HeaderItem";
+
 export default function Header() {
     return (
         <header data-component="header" className="header" id="header">
@@ -6,40 +8,11 @@ export default function Header() {
 
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
-                        <li className="nav__item">
-                            <a href="#home" className="nav__link active-link">
-                                <i className='bx bx-home-alt nav__icon'></i>
-                                <span className="nav__name">Home</span>
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#about" className="nav__link">
-                                <i className='bx bx-user nav__icon'></i>
-                                <span className="nav__name">About</span>
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#skills" className="nav__link">
-                                <i className='bx bx-book-alt nav__icon'></i>
-                                <span className="nav__name">Skills</span>
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#portfolio" className="nav__link">
-                                <i className='bx bx-briefcase-alt nav__icon'></i>
-                                <span className="nav__name">Portfolio</span>
-                            </a>
-                        </li>
-
-                        <li className="nav__item">
-                            <a href="#contactme" className="nav__link">
-                                <i className='bx bx-message-square-detail nav__icon'></i>
-                                <span className="nav__name">Contactme</span>
-                            </a>
-                        </li>
+                        <HeaderItem id="home" icon="bx-home-alt" label="Home"/>
+                        <HeaderItem id="about" icon="bx-user" label="About"/>
+                        <HeaderItem id="skills" icon="bx-book-alt" label="Skills"/>
+                        <HeaderItem id="portfolio" icon="bx-briefcase-alt" label="Portfolio"/>
+                        <HeaderItem id="contactme" icon="bx-message-square-detail" label="Contact me"/>
                     </ul>
                 </div>
 

@@ -1,16 +1,14 @@
 import { useRef, useEffect } from "react";
 
+import { setActiveSectionId } from "../services/service";
+
 export default function Section({ id, title }) {
     const sectionRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
-            console.log(id + " - " + entries[0].intersectionRatio);
-
             if (entries[0].intersectionRatio >= 0.8) {
-            }
-
-            if (entries[0].intersectionRatio <= 0.2) {
+                setActiveSectionId(id);
             }
         }, {
             root: null,
