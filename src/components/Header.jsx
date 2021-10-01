@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <header className="header" id="header">
+        <header data-component="header" className="header" id="header">
             <nav className="nav container">
                 <a href="#" className="nav__logo">Marlon</a>
 
