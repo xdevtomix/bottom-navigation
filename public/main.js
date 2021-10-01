@@ -1,7 +1,7 @@
 setTimeout(() => {
     console.log(111);
     /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-    const sections = document.querySelectorAll('section[id]')
+    /* const sections = document.querySelectorAll('section[id]')
 
     function scrollActive() {
         const scrollY = window.pageYOffset
@@ -18,7 +18,7 @@ setTimeout(() => {
             }
         })
     }
-    window.addEventListener('scroll', scrollActive)
+    window.addEventListener('scroll', scrollActive) */
 
 
     /*=============== CHANGE BACKGROUND HEADER ===============*/
