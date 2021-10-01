@@ -21,7 +21,7 @@ export default function Header() {
     return (
         <header data-component="header" className={`header ${isScrollHeader ? 'scroll-header' : ''}`} id="header" ref={headerRef}>
             <nav className="nav container">
-                <a href="#" className="nav__logo">Marlon</a>
+                <a href="#" className="nav__logo">T.O.M</a>
 
                 <div className="nav__menu" id="nav-menu">
                     <ul className="nav__list">
@@ -33,7 +33,7 @@ export default function Header() {
                     </ul>
                 </div>
 
-                <img src="https://cdn.pixabay.com/photo/2015/03/03/20/42/man-657869__340.jpg" alt="" className="nav__img" />
+                <img src="https://cdn.pixabay.com/photo/2015/03/03/20/42/man-657869__340.jpg" alt="Man" className="nav__img" />
             </nav>
         </header>
     );

@@ -6,8 +6,8 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --hue: 174;
-  --sat: 63%;
+  --hue: 310;
+  --sat: 60%;
   --first-color: hsl(var(--hue), var(--sat), 40%);
   --first-color-alt: hsl(var(--hue), var(--sat), 36%);
   --title-color: hsl(var(--hue), 12%, 15%);
@@ -18,8 +18,8 @@
   /*========== Font and typography ==========*/
   --body-font: 'Open Sans', sans-serif;
   --h1-font-size: 1.5rem;
-  --normal-font-size: .938rem;
-  --tiny-font-size: .625rem;
+  --normal-font-size: 1rem;
+  --tiny-font-size: 0.8rem;
 
   /*========== z index ==========*/
   --z-tooltip: 10;
@@ -38,12 +38,11 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -151,6 +150,8 @@ img {
   row-gap: 4px;
   color: var(--title-color);
   font-weight: 600;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav__list {
