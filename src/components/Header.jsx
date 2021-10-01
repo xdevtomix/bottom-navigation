@@ -61,6 +61,9 @@ const Nav = styled.nav`
 
     @media screen and (min-width: 768px) {
         height: calc(var(--header-height) + 1.5rem);
+    }
+
+    @media screen and (min-width: 968px) {
         margin-left: auto;
         margin-right: auto;
     }
@@ -72,8 +75,6 @@ const Logo = styled.a`
 `;
 
 const Menu = styled.div`
-    margin-right: 1rem;
-    
     @media screen and (max-width: 767px) {
         position: fixed;
         bottom: 0;
@@ -87,7 +88,6 @@ const Menu = styled.div`
         align-content: center;
         border-radius: 1.25rem 1.25rem 0 0;
         transition: .4s;
-        margin-right: 0;
     }
 `;
 
